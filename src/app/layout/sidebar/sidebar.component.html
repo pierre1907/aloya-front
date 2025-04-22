@@ -1,0 +1,86 @@
+<!-- sidebar.component.html -->
+<nav class="sidebar">
+  <div class="logo">
+    <img src="assets/logo-withoutbg.png" width="100" height="100" alt="Logo" class="logo-img" />
+  </div>
+  <ul class="nav">
+    <li>
+      <a
+        routerLink="/dashboard"
+        class="nav-link"
+        [ngClass]="{ 'active-link': isActiveRoute('/dashboard') }"
+      >
+        <lucide-icon
+          [img]="Dashboard"
+          [ngClass]="{ 'my-icon': true, 'active-icon': isActiveRoute('/dashboard') }"
+        ></lucide-icon>
+        Dashboard
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/locataires"
+        class="nav-link"
+        [ngClass]="{ 'active-link': isActiveRoute('/locataires') }"
+      >
+        <lucide-icon
+          [img]="Users"
+          [ngClass]="{ 'my-icon': true, 'active-icon': isActiveRoute('/locataires') }"
+        ></lucide-icon>
+        Locataires
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/biens"
+        class="nav-link"
+        [ngClass]="{ 'active-link': isActiveRoute('/biens') }"
+      >
+        <lucide-icon
+          [img]="Biens"
+          [ngClass]="{ 'my-icon': true, 'active-icon': isActiveRoute('/biens') }"
+        ></lucide-icon>
+        Biens
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/paiements"
+        class="nav-link"
+        [ngClass]="{ 'active-link': isActiveRoute('/paiements') }"
+      >
+        <lucide-icon
+          [img]="Paiements"
+          [ngClass]="{ 'my-icon': true, 'active-icon': isActiveRoute('/paiements') }"
+        ></lucide-icon>
+        Paiements
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/quittances"
+        class="nav-link"
+        [ngClass]="{ 'active-link': isActiveRoute('/quittances') }"
+      >
+        <lucide-icon
+          [img]="Quittances"
+          [ngClass]="{ 'my-icon': true, 'active-icon': isActiveRoute('/quittances') }"
+        ></lucide-icon>
+        Quittances
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/notifications"
+        class="nav-link"
+        [ngClass]="{ 'active-link': isActiveRoute('/notifications') }"
+      >
+        <lucide-icon
+          [img]="notifications"
+          [ngClass]="{ 'my-icon': true, 'active-icon': isActiveRoute('/notifications') }"
+        ></lucide-icon>
+        Notifications
+      </a>
+    </li>
+  </ul>
+</nav>

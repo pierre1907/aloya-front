@@ -1,0 +1,28 @@
+src/
+├── app/
+│   ├── core/              # Services, Intercepteurs, Guard
+│   ├── shared/            # Composants et directives réutilisables
+│   ├── layout/            # Navbar, sidebar, footer
+│   ├── features/          # Modules fonctionnels
+│   │   ├── dashboard/
+│   │   ├── locataires/
+│   │   ├── biens/
+│   │   ├── paiements/
+│   │   ├── quittances/
+│   │   ├── notifications/
+│   ├── app.routes.ts      # Configuration des routes principales
+│   └── app.component.ts
+
+
+🖥️ Dashboard Mock (statique pour l’instant)
+Tu auras :
+
+Nombre de locataires
+
+Nombre de biens
+
+Paiements reçus ce mois
+
+Alertes de paiement en retard
+
+Le tout avec des cards Tailwind épurées.
