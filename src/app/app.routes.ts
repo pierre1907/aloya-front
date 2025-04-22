@@ -12,8 +12,9 @@ import {NotificationsComponent} from "./features/notifications/notifications.com
 export const routes: Routes = [
   {
     path: 'login',
-    component: LoginFormComponent
+    loadComponent: () => import('./auth/login-form/login-form.component').then(m => m.LoginFormComponent)
   },
+
   {
     path: '',
     component: LayoutComponent,

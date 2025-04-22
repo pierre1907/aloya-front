@@ -1,1 +1,22 @@
-<p>login-form works!</p>
+<div class="login-container">
+  <div class="login-card">
+    <div class="logo-container">
+      <img src="assets/logo-withoutbg.png" alt="Aloya Logo" class="logo" />
+    </div>
+    <h2 class="title">Connexion</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" formControlName="email" type="email" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Mot de passe</label>
+        <input id="password" formControlName="password" type="password" required />
+      </div>
+      <div class="forgot-password">
+        <a routerLink="/mot-de-passe-oublie">Mot de passe oublié ?</a>
+      </div>
+      <button type="submit" [disabled]="loginForm.invalid">Se connecter</button>
+    </form>
+  </div>
+</div>
