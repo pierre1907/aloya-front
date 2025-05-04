@@ -1,18 +1,21 @@
 /* main-layout.component.css */
+
 .main-layout {
   display: flex;
-  min-height: 100vh;
+  height: 100vh; /* toute la hauteur de l'écran */
+  overflow: hidden; /* empêche les scrolls globaux */
 }
 
 .content-area {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  overflow: hidden; /* garde le scroll uniquement dans main */
 }
 
 .main-content {
   flex-grow: 1;
+  overflow-y: auto; /* le scroll vertical ne s'applique que sur cette zone */
   padding: 1rem;
   background-color: #f8f9fa;
 }
-
