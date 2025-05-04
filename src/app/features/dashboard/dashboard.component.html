@@ -57,6 +57,17 @@
       <p class="text-xl font-bold">5</p>
     </div>
   </div>
+
+  <!-- Carte Statistique: Utilisateurs -->
+  <div class="bg-white shadow rounded-2xl p-4 flex items-center space-x-4">
+    <div class="bg-blue-400 text-yellow-300 rounded-full p-3">
+      <lucide-icon [img]="utilisateurs" class="w-6 h-6"></lucide-icon>
+    </div>
+    <div>
+      <h2 class="text-lg font-semibold text-gray-700">Notifications</h2>
+      <p class="text-xl font-bold">5</p>
+    </div>
+  </div>
 </section>
 
 
@@ -93,33 +104,18 @@
 </div>
 
 
-<!-- Paiements récents -->
+<!-- Dernieres Notifications-->
 <div class="bg-white rounded-xl shadow p-4 mb-6">
-  <h3 class="text-lg font-semibold text-gray-800 mb-4">Paiements récents</h3>
+  <h3 class="text-lg font-semibold text-gray-800 mb-4">Dernières Notifications</h3>
   <table class="w-full text-sm text-left text-gray-700">
     <thead class="bg-gray-100 text-gray-600">
     <tr>
-      <th class="px-4 py-2">Locataire</th>
-      <th class="px-4 py-2">Montant</th>
-      <th class="px-4 py-2">Date</th>
-      <th class="px-4 py-2">Statut</th>
+      <th class="px-4 py-2">Message</th>
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let paiement of paiements" class="border-b hover:bg-gray-50">
-      <td class="px-4 py-2">{{ paiement.locataire }}</td>
-      <td class="px-4 py-2">{{ paiement.montant }}</td>
-      <td class="px-4 py-2">{{ paiement.date | date:'dd/MM/yyyy' }}</td>
-      <td class="px-4 py-2">
-          <span
-            [ngClass]="{
-              'text-green-600': paiement.statut === 'Payé',
-              'text-red-600': paiement.statut === 'En attente'
-            }"
-          >
-            {{ paiement.statut }}
-          </span>
-      </td>
+    <tr *ngFor="let notification of notifications" class="border-b hover:bg-gray-50">
+      <td class="px-4 py-2">{{ notification.message }}</td>
     </tr>
     </tbody>
   </table>

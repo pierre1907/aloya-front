@@ -8,6 +8,7 @@ import {PaiementsComponent} from "./features/paiements/paiements.component";
 import {QuittancesComponent} from "./features/quittances/quittances.component";
 import {ParametresComponent} from "./features/parametres/parametres.component";
 import {NotificationsComponent} from "./features/notifications/notifications.component";
+import {UtilisateursComponent} from "./features/utilisateurs/utilisateurs.component";
 
 export const routes: Routes = [
   {
@@ -27,6 +28,7 @@ export const routes: Routes = [
       { path: 'quittances', component: QuittancesComponent },
       { path: 'notifications', component: NotificationsComponent },
       { path: 'parametres', component: ParametresComponent },
+      { path: 'utilisateurs', component: UtilisateursComponent },
 
     ]
   }

@@ -1,0 +1,36 @@
+<div class="p-6">
+  <h1 class="text-2xl font-bold mb-6">Gestion des utilisateurs</h1>
+
+  <div class="overflow-x-auto bg-white shadow rounded-2xl">
+    <table class="min-w-full text-sm text-left text-gray-700">
+      <thead class="bg-gray-100 text-gray-600 uppercase text-xs">
+      <tr>
+        <th class="px-6 py-3">Nom</th>
+        <th class="px-6 py-3">Prenom(s)</th>
+        <th class="px-6 py-3">Email</th>
+        <th class="px-6 py-3">Rôle</th>
+        <th class="px-6 py-3 text-center">Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="border-b hover:bg-gray-50" *ngFor="let personne of utilisateurs">
+        <td class="px-6 py-4 font-medium text-gray-900">{{ personne.nom }}</td>
+        <td class="px-6 py-4">{{ personne.prenoms }}</td>
+        <td class="px-6 py-4">{{ personne.email }}</td>
+        <td class="px-6 py-4">{{ personne.role }}</td>
+        <td class="px-6 py-4 text-center space-x-3">
+          <button class="text-blue-500 hover:text-blue-700" (click)="voirUtilisateur(personne)">
+            <lucide-icon name="Eye" class="w-5 h-5"></lucide-icon>
+          </button>
+          <button class="text-green-500 hover:text-green-700" (click)="modifierUtilisateur(personne)">
+            <lucide-icon name="Pencil" class="w-5 h-5"></lucide-icon>
+          </button>
+          <button class="text-red-500 hover:text-red-700" (click)="supprimerUtilisateur(personne)">
+            <lucide-icon name="Trash" class="w-5 h-5"></lucide-icon>
+          </button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

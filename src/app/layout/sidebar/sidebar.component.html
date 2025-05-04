@@ -83,5 +83,11 @@
         Notifications
       </a>
     </li>
+    <li>
+      <a routerLink="/utilisateurs" class="nav-link" [ngClass]="{ 'active-link': isActiveRoute('/utilisateurs') }">
+        <lucide-icon [img]="utilisateurs" [ngClass]="{ 'my-icon': true, 'active-icon': isActiveRoute('/utilisateurs') }"></lucide-icon>
+        Utilisateurs
+      </a>
+    </li>
   </ul>
 </nav>

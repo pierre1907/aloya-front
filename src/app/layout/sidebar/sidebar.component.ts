@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LucideAngularModule, BellDot, Landmark, ReceiptText, Home, Users, LayoutDashboard } from 'lucide-angular';
+import {LucideAngularModule, BellDot, Landmark, ReceiptText, Home, Users, LayoutDashboard, User2} from 'lucide-angular';
 import {Router, RouterLink, RouterLinkActive} from "@angular/router";
 import {NgClass} from "@angular/common";
 
@@ -21,6 +21,7 @@ export class SidebarComponent {
   readonly Paiements = Landmark;
   readonly Quittances = ReceiptText;
   readonly Biens = Home;
+  readonly utilisateurs = User2
 
   constructor(public router: Router) {}
 

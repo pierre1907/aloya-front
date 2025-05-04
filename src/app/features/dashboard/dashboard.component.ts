@@ -10,7 +10,7 @@ import {
   FileText,
   BellDot,
   Landmark,
-  ReceiptText, Home
+  ReceiptText, Home, Users2Icon, User2
 } from 'lucide-angular';
 //import { Users, Building2, CreditCard, FileText, Bell } from 'lucide-angular';
 
@@ -29,7 +29,7 @@ export class DashboardComponent {
   readonly Paiements = Landmark;
   readonly Quittances = ReceiptText;
   readonly Biens = Home;
-
+  readonly utilisateurs = User2;
 
   cards = [
     {
@@ -77,7 +77,7 @@ export class DashboardComponent {
 
   notifications = [
     { message: 'Nouvelle quittance générée pour Jean Dupont.' },
-    { message: 'Paiement en attente de Fatou Ndiaye.' },
+    { message: 'Retard de loyer pour Fatou Ndiaye.' },
     { message: 'Le bien "Résidence Diamniadio" a été mis à jour.' }
   ];
 
