@@ -20,15 +20,17 @@
         <td class="px-6 py-4">{{ personne.role }}</td>
         <td class="px-6 py-4 text-center space-x-3">
           <button class="text-blue-500 hover:text-blue-700" (click)="voirUtilisateur(personne)">
-            <lucide-icon name="Eye" class="w-5 h-5"></lucide-icon>
+            <lucide-icon [img]="eye" class="w-6 h-6"></lucide-icon>
+
           </button>
           <button class="text-green-500 hover:text-green-700" (click)="modifierUtilisateur(personne)">
-            <lucide-icon name="Pencil" class="w-5 h-5"></lucide-icon>
+            <lucide-icon [img]="pencil" class="w-6 h-6"></lucide-icon>
           </button>
           <button class="text-red-500 hover:text-red-700" (click)="supprimerUtilisateur(personne)">
-            <lucide-icon name="Trash" class="w-5 h-5"></lucide-icon>
+            <lucide-icon [img]="trash" class="w-6 h-6"></lucide-icon>
           </button>
         </td>
+
       </tr>
       </tbody>
     </table>
