@@ -24,7 +24,7 @@ export class UtilisateursComponent {
 
   utilisateurs = [
     { nom: 'Dupont', prenoms: 'Jean', email: 'jean@exemple.com', role: 'Admin' },
-    { nom: 'Ndiaye', prenoms: 'Fatou', email: 'fatou@exemple.com', role: 'Gestionnaire' },
+    { nom: 'DJOBO', prenoms: 'Katia', email: 'kate@aloya.com', role: 'Gestionnaire' },
     { nom: 'Ba', prenoms: 'Mamadou', email: 'mamadou@exemple.com', role: 'Utilisateur' },
     { nom: 'Ba', prenoms: 'Mamadou', email: 'mamadou@exemple.com', role: 'Utilisateur' },
     { nom: 'Ndiaye', prenoms: 'Fatou', email: 'fatou@exemple.com', role: 'Gestionnaire' },
