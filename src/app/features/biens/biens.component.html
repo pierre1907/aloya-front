@@ -45,17 +45,21 @@
           </span>
         </p>
 
-        <div class="flex gap-2">
-          <button class="text-blue-500 hover:text-blue-700" (click)="voirBien(bien)">
-            <lucide-icon [img]="eye" class="w-6 h-6"></lucide-icon>
-          </button>
-          <button class="text-green-500 hover:text-green-700" (click)="modifierBien(bien)">
-            <lucide-icon [img]="pencil" class="w-6 h-6"></lucide-icon>
-          </button>
-          <button class="text-red-500 hover:text-red-700" (click)="supprimerBien(bien)">
-            <lucide-icon [img]="trash" class="w-6 h-6"></lucide-icon>
-          </button>
+        <div class="flex items-center justify-between mt-4">
+          <p class="text-sm text-gray-500">Réf : {{ bien.reference }}</p>
+          <div class="flex gap-2">
+            <button class="text-blue-500 hover:text-blue-700" (click)="voirBien(bien)">
+              <lucide-icon [img]="eye" class="w-5 h-5"></lucide-icon>
+            </button>
+            <button class="text-green-500 hover:text-green-700" (click)="modifierBien(bien)">
+              <lucide-icon [img]="pencil" class="w-5 h-5"></lucide-icon>
+            </button>
+            <button class="text-red-500 hover:text-red-700" (click)="supprimerBien(bien)">
+              <lucide-icon [img]="trash" class="w-5 h-5"></lucide-icon>
+            </button>
+          </div>
         </div>
+
       </div>
     </div>
   </div>
